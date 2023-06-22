@@ -13,7 +13,7 @@ html {
 
 body {
   align-items: center;
-  background: linear-gradient(320deg, #000000, #ff7c02, #006eff);
+  background: linear-gradient(320deg, #000000, #024b3f, #0686cf);
   display: flex;
   font-family: Helvetica;
   font-display: swap;
@@ -33,7 +33,7 @@ body {
   background: rgba(255, 255, 255, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.3);
   flex-basis: 400px;
-  height: 500px;
+  height: 450px;
   padding: 20px 35px;
 }
 
@@ -49,5 +49,58 @@ body {
   overflow: auto;
   padding: 5px;
   text-align: right;
-  width: 299px;
+  width: 330px;
+}
+
+.calc-button-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.calc-button {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(2, 0, 0, 0.1);
+  color: rgb(65, 65, 65);
+  flex-basis: 20%;
+  font-family: inherit;
+  font-size: 24px;
+  height: 50px;
+}
+
+.calc-button:last-child {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(2, 0, 0, 0.1);
+  color: rgb(255, 255, 255);
+  background: #014d46;
+}
+
+.calc-button:last-child:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.calc-button:hover {
+  background-color: inherit;
+}
+
+.calc-button:active {
+  background-color: rgb(7, 1, 90);
+  color: white;
+}
+
+.double {
+  flex-basis: 47%;
+}
+
+.triple {
+  flex-basis: 73%;
 }
