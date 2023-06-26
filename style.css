@@ -13,12 +13,13 @@ html {
 
 body {
   align-items: center;
-  background: linear-gradient(320deg, #000000, #024b3f, #0686cf);
+  background: linear-gradient(#000000, #280253, #123288, #0c8686);
   display: flex;
   font-family: Helvetica;
   font-display: swap;
   height: inherit;
   justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
@@ -30,7 +31,7 @@ body {
   box-shadow: 0 4px 30px rgba(2, 0, 0, 0.75);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(33, 34, 1, 0.363);
   border: 1px solid rgba(255, 255, 255, 0.3);
   flex-basis: 400px;
   height: 450px;
@@ -93,6 +94,10 @@ body {
 }
 
 .calc-button:active {
+  background-color: rgb(7, 1, 90);
+  color: white;
+}
+.calc-button:last-child:active {
   background-color: rgb(7, 1, 90);
   color: white;
 }
